@@ -2,7 +2,7 @@ import sqlite3
 import pandas as pd
 import numpy as np
 
-#function to make dataframes from sql database
+# function to make dataframes from sql database
 
 def make_sql_frame(sql):
     """
@@ -18,7 +18,7 @@ def make_sql_frame(sql):
     df.columns = [x[0] for x in c.description]
     return df
 
-#function to add wins, losses, draws to team objects
+# function to add wins, losses, draws to team objects
 
 def get_results(teamDict, dataFrame, result):
     """
